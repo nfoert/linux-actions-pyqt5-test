@@ -21,7 +21,7 @@ jobs:
     - name: Install qmake and other dependencies
       run: |
         sudo apt-get update
-        sudo apt-get install -y qmake
+        sudo apt-get install -y qt5-qmake
 
     - name: Create virtual environment and install dependencies
       run: |
