@@ -33,3 +33,9 @@ jobs:
       run: |
         source venv/bin/activate
         pyinstaller spec_file.spec
+        
+    - name: Upload .exe as an artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: main # Replace with your desired artifact name
+        path: dist/main.exe # Replace with the path to your generated .exe file
